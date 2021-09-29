@@ -54,4 +54,4 @@ If you try to run the Free-Free system, you get the following error:
 kinv = np.linalg.inv(k)
 numpy.linalg.LinAlgError: Singular matrix
 ```
-In a Free-Free system, the difference matrix, A, does not have a full rank because there are more masses than springs, giving us more unknowns than equations. Because A does not have a full rank, it is not invertible, and we get a singular matrix.
+In a Free-Free system, the difference matrix, A, does not have a full rank because there are more masses than springs, giving us more unknowns than equations. Because A does not have a full rank, it is not invertible, and we get a singular matrix that is unsolvable.
