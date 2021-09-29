@@ -4,7 +4,7 @@ from scipy.linalg import svd
 def solve(num_springs, mass_list, c_list, A):
     
     # construct force matrix: force = mass * gravity
-    force_matrix = np.array(mass_list) * 9.8
+    f = np.array(mass_list) * 9.8
     
     # generate diagonal matrix from spring constants
     c = np.zeros((num_springs, num_springs))
@@ -20,7 +20,7 @@ def solve(num_springs, mass_list, c_list, A):
     At = np.matrix(At)
     A = np.matrix(A)
     c = np.matrix(c)
-    force_matrix = np.matrix(force_matrix)
+    f = np.matrix(f)
     
     # solve for k (stiffness matrix): k = (A^t) * c * A
     k = At * c * A
@@ -29,7 +29,7 @@ def solve(num_springs, mass_list, c_list, A):
     kinv = np.linalg.inv(k)
     
     # solve for u (displacement vector): u = force * (k^-1)
-    u = force_matrix * kinv
+    u = f * kinv
     
     # solve for e (elongation vector): e = A * u
     e = A*u.transpose()
@@ -37,7 +37,7 @@ def solve(num_springs, mass_list, c_list, A):
     # solve for w: w = c * e
     w = c * e
     
-    return u, e, w, At, c
+    return u, e, w, At, c, f
 
 def condition_number(A):
     # SVD
