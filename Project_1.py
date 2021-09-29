@@ -43,7 +43,7 @@ report = open('report.txt','w')
 report.write('The displacements of the springs are:\n' + str(u[0].round(2).tolist()) + 
             '\n\nThe elongations of the springs are:\n' + str(e.round(2).tolist()) + 
             '\n\nThe Internal forces within the springs are:\n' + str(w.round(2).tolist()) + 
-            '\n\nThe condition number of A is: ' + str(c_num_e.round(2)) + 
-            '\n\nThe condition number of At is: ' + str(c_num_w.round(2)) + 
-            '\n\nThe condition number of c is: ' + str(c_num_f.round(2)))
+            '\n\nThe condition number of e is: ' + str(c_num_e.round(2)) + 
+            '\n\nThe condition number of w is: ' + str(c_num_w.round(2)) + 
+            '\n\nThe condition number of f is: ' + str(c_num_f.round(2)))
 
