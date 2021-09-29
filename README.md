@@ -12,13 +12,14 @@ The user inputs the number of springs in the system and the boundary condition. 
 Run the following in the terminal:
 ```python3 Project_1.py```
 
+The program will prompt you as follows:
+```
 How many springs are in your system?    4
 What type of boundary condition would you like to apply?
 1. Fixed-Fixed
 2. Fixed-Free
 3. Free-Free
-
-```
+1
 What is mass 1? 1
 What is mass 2? 1
 What is mass 3? 1
