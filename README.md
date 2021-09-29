@@ -17,7 +17,8 @@ What type of boundary condition would you like to apply?
 1. Fixed-Fixed
 2. Fixed-Free
 3. Free-Free
-1
+
+```
 What is mass 1? 1
 What is mass 2? 1
 What is mass 3? 1
@@ -25,8 +26,9 @@ What is the spring constant of spring 1?        1
 What is the spring constant of spring 2?        1
 What is the spring constant of spring 3?        1
 What is the spring constant of spring 4?        1
+```
 
-The results apprear in anoutput file titled 'report.txt'
+The results appear in anoutput file titled 'report.txt'
 
 ```
 The displacements of the springs are:
