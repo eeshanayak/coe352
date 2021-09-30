@@ -1,0 +1,14 @@
+The displacements of the springs are:
+[[14.7, 19.6, 14.7]]
+
+The elongations of the springs are:
+[[14.7, 4.9, -4.9, -14.7]]
+
+The Internal forces within the springs are:
+[[14.7, 4.9, -4.9, -14.7]]
+
+The condition number of A is: 2.41
+
+The condition number of At is: 2.41
+
+The condition number of c is: 1.0
