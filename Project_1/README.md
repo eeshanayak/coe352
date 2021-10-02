@@ -8,7 +8,7 @@ For this project, I analyzed spring-mass systems with the following boundary con
 
 The user inputs the number of springs in the system and the boundary condition. Depending on these values, the program determines how many masses are in the system and prompts the user to input the values of the masses and the spring constants. Then, the program runs an algorithm to solve the system and output the displacements, elongations, and internal forces of the springs.
 
-## Usage (Example: Fixed-Fixed with 4 sprrings)
+## Usage (Example: Fixed-Fixed with 4 springs)
 Run the following in the terminal:
 ```python3 Project_1.py```
 
