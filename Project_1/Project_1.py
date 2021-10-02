@@ -12,13 +12,12 @@ mass_list = []
 
 if (boundary_condition == 1):
     num_masses = num_springs - 1
-    A = np.zeros((num_springs, num_masses))
 elif (boundary_condition == 2):
     num_masses = num_springs
-    A = np.zeros((num_springs, num_masses))
 elif (boundary_condition == 3):
     num_masses = num_springs + 1
-    A = np.zeros((num_springs, num_masses))
+
+A = np.zeros((num_springs, num_masses))
 
 for i in range(num_masses): 
     mass = int(input('What is mass ' + str(i + 1) + '?\t')) 
