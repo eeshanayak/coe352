@@ -9,4 +9,4 @@
 ```python3 Homework3LeapFrog.py```
 When you run this program, the same figures as the Jupyter Notebook will be generated. 
 
-The error plot looks quadratic which makes sense because the Leap Frog method i second-order accurate
+The error plot looks quadratic which makes sense because the Leap Frog method is second-order accurate
