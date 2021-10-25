@@ -5,10 +5,14 @@ def solve(num_springs, mass_list, c_list, A):
     
     # construct force matrix: force = mass * gravity
     f = np.array(mass_list) * 9.8
-
+    
     # generate diagonal matrix from spring constants
     c = np.zeros((num_springs, num_springs))
     np.fill_diagonal(c, c_list)
+    
+    # generate difference matrix
+    np.fill_diagonal(A, 1)
+    np.fill_diagonal(A[1:], -1)
     
     At = A.transpose()
 
@@ -38,3 +42,12 @@ def solve(num_springs, mass_list, c_list, A):
     w = w.transpose()
     
     return u, e, w, At, c, f
+
+def condition_number(A):
+    # SVD
+    U, s, VT = svd(A)
+    
+    # solve for condition num: eig_max / eig_min
+    condition_num = s.max() / s.min()
+    
+    return condition_num

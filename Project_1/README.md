@@ -42,10 +42,16 @@ The Internal forces within the springs are:
 [[14.7, 4.9, -4.9, -14.7]]
 
 The condition number of A is: 2.41
+The singular values of A are: [1.85, 1.41, 0.77]
+The eigenvalues of A are: [1.36, 1.19, 0.87]
 
 The condition number of At is: 2.41
+The singular values of At are: [1.85, 1.41, 0.77]
+The eigenvalues of At are: [1.36, 1.19, 0.87]
 
 The condition number of c is: 1.0
+The singular values of c are: [1.0, 1.0, 1.0, 1.0]
+The eigenvalues of c are: [1.0, 1.0, 1.0, 1.0]
 ```
 
 ## Free-Free Discussion
@@ -55,3 +61,6 @@ kinv = np.linalg.inv(k)
 numpy.linalg.LinAlgError: Singular matrix
 ```
 In a Free-Free system, the difference matrix, A, does not have a full rank because there are more masses than springs, giving us more unknowns than equations. Because A does not have a full rank, it is not invertible, and we get a singular matrix that is unsolvable.
+
+## Free-Free Solution Alternate Method: SVD
+To try to solve the free-free system using SVD, I called SVD on the difference matrix, A. I noticed that if I tried multiplying the factored output back into the original matrix, I got a matrix dimension issue, therefore I could not plug it back in to solve for the force vector, and further the internal stress and elongation vectors.

@@ -1,14 +1,20 @@
 The displacements of the springs are:
-[[29.4, 31.36, 41.16]]
+[[14.7, 19.6, 14.7]]
 
 The elongations of the springs are:
-[[29.4, 1.96, 9.8]]
+[[14.7, 4.9, -4.9, -14.7]]
 
 The Internal forces within the springs are:
-[[29.4, 19.6, 9.8]]
+[[14.7, 4.9, -4.9, -14.7]]
 
-The condition number of A is: 4.05
+The condition number of A is: 2.41
+The singular values of A are: [1.85, 1.41, 0.77]
+The eigenvalues of A are: [1.36, 1.19, 0.87]
 
-The condition number of At is: 4.05
+The condition number of At is: 2.41
+The singular values of At are: [1.85, 1.41, 0.77]
+The eigenvalues of At are: [1.36, 1.19, 0.87]
 
-The condition number of c is: 10.0
+The condition number of c is: 1.0
+The singular values of c are: [1.0, 1.0, 1.0, 1.0]
+The eigenvalues of c are: [1.0, 1.0, 1.0, 1.0]
